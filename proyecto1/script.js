@@ -11,6 +11,7 @@ botones.forEach(boton =>{
             if (pantalla.textContent.length === 1 || pantalla.textContent === "!Erorr!"){
                 pantalla.textContent="0";
             }else{
+                
                 pantalla.textContent = pantalla.textContent.slice(0, -1);
                 
             }
@@ -19,23 +20,28 @@ botones.forEach(boton =>{
         }
 
         if (boton.id === "igual") {
-            try{
-                pantalla.textContent = eval(pantalla.textContent);
-            } catch{
+            try {
+                const expresion = pantalla.textContent;
+                if (expresion.includes("//")) {
+                    pantalla.textContent = "!Erorr!";
+                } else {
+                    const resultado = eval(expresion);
+                    if (isNaN(resultado) || !isFinite(resultado)) {
+                        pantalla.textContent = "!Erorr!";
+                    } else {
+                        pantalla.textContent = resultado;
+                    }
+                }
+            } catch (error) {
                 pantalla.textContent = "!Erorr!";
             }
             return;
         }
 
-        if 
-
-
-
 
         if (boton.id === "limpiar") {
             pantalla.textContent = "0";
             return;
-            
         }
 
         if (pantalla.textContent === "0" || pantalla.textContent === "!Erorr!") {
@@ -48,5 +54,7 @@ botones.forEach(boton =>{
     })
 
 
+
+})
 
 })
