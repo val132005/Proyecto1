@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(149, 71, 151);
+}
+.imagen{
+    margin-left: 18px;
+    width: 50px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: aliceblue;
+    margin-left: 520px;
+    margin-right: 520px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgb(228, 218, 218);
+
+}
+
+#nombreEvento, #fechaEvento, #agregar{
+    width: 250px;
+    height: 35px;
+    border: 2px solid rgb(149, 71, 151) ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: black;
+    font-size: 15px;
+
+
+}
+
+#agregar{
+    background-color: rgb(149, 71, 151);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+#agregar:hover{
+    background-color: rgb(97, 31, 97);
+    border: 2px solid rgb(97, 31, 97) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.listaEventos2{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 280px;
+    margin-right: 280px;
+    border-radius: 20px;
+    padding-bottom: 35px;
+    box-shadow: 2px 2px 30px rgb(228, 218, 218);
+}
+
+.evento{
+    background-color: aliceblue;
+    margin-top: 36px;
+    width: 710px;
+    border: 2px solid rgb(149, 71, 151);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 5vh;
+}
+
+.nombreEvento{
+    width: 200px;
+    height: auto;
+    margin-left: 0px;
+    margin-left: 5vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
+
+.fechaEvento{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.eliminar{
+    padding: 10px;
+    background-color: rgb(149, 71, 151);
+    border: 2px solid rgb(149, 71, 151);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 14px;
+    margin-right: 5vh;
+    
+}
+
+
+.diasFaltantes{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: rgb(149, 71, 151);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.footer{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.eliminar:hover{
+    background-color: rgb(97, 31, 97);
+    border: 2px solid rgb(97, 31, 97) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+    
+}
+
